@@ -8,7 +8,7 @@ function tabela(){
             contentType: 'application/x-www-form-urlencoded; charset=UTF-8',
             dataType: 'json',
             success: function(data){
-                console.log('deu certo');
+                
                 data == false ? alert('nenhum usuario encontrado') : exibir(data);
             }
 
@@ -19,7 +19,7 @@ function tabela(){
 function exibir(data){
     console.log('me chamaram');
     
-    t = $('#produto');
+    t = $('#select');
     
     data.forEach(function(e){
         var table = "<option value='" + e['cod'] + "'>" + e['nome'] + "</option>";

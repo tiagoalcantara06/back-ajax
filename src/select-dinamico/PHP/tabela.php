@@ -1,8 +1,5 @@
 <?php
-require "conexao.php"; 
-// echo 'to aqui';
-
-// header('Content-Type: application/json');
+require '../../conexao.php'; 
 
 if($_SERVER["REQUEST_METHOD"] == "POST") {
 

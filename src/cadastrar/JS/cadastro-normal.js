@@ -22,26 +22,30 @@ $(document).ready(function () {
 });
 
 function t() {
-    // Swal.fire({
-    //     icon: 'success',
-    //     title: 'Enviado com sucesso!',
-    //     customClass: {
-    //         confirmButton: 'swal-button' 
-    //     }
-    // }).then((result) => {
-    //     if (result.isConfirmed) {
-    //         window.location.href = 'pag-principal.html';
-    //     }
-    // });
-    window.location.href = 'http://localhost/fono/src/Login/login.html';
+    Swal.fire({
+        icon: 'success',
+        title: 'Enviado com sucesso!',
+        customClass: {
+            confirmButton: 'swal-button' 
+        }
+    }).then((result) => {
+        if (result.isConfirmed) {
+            window.location.href = '../login';
+        }
+    });
+
 }
 function e() {
-    //     Swal.fire({
-    //       icon: 'error',
-    //       title: 'Erro ao enviar o formulário',
-    //       text: 'Por favor, tente novamente mais tarde.',
-    //       customClass: {
-    //         confirmButton: 'swal-button' 
-    //     }
-    //     });
+        Swal.fire({
+          icon: 'error',
+          title: 'Erro ao enviar o formulário',
+          text: 'Por favor, tente novamente mais tarde.',
+          customClass: {
+            confirmButton: 'swal-button' 
+        }
+        }).then((result) => {
+            if(result.isConfirmed){
+                window.location.reload();
+            }
+        });
 }

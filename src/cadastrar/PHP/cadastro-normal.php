@@ -1,6 +1,6 @@
 <?php
 
-require 'conexao.php'; // Arquivo com a conexão ao banco de dados
+require '../../conexao.php'; // Arquivo com a conexão ao banco de dados
 session_start();
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {

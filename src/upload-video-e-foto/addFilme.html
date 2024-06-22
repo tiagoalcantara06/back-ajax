@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inserção de Filmes</title>
+    <link rel="stylesheet" href="../css/form.css">
+    <style>
+       
+    </style>
+</head>
+<body class="body-a">
+    <div class="container">
+        <h2>Inserção de Filmes</h2>
+        <form id="filmForm" enctype="multipart/form-data">
+            <div class="form-group">
+                <label for="nome">Nome do Filme:</label>
+                <input type="text" id="nome" name="nome" required>
+            </div>
+            <div class="form-group">
+                <label for="imagem">Imagem do Filme:</label>
+                <label for="imagem" class="custom-file-upload">Escolher Imagem</label>
+                <input type="file" id="imagem" name="imagem" accept="image/*" required>
+                <div id="imagePreview"></div>
+            </div>
+            <div class="form-group">
+                <label for="genero">Gênero:</label>
+                <input type="number" id="genero" name="genero" required>
+            </div>
+            <div class="form-group">
+                <label for="video">Vídeo do Filme:</label>
+                <label for="video" class="custom-file-upload">Escolher Vídeo</label>
+                <input type="file" id="video" name="video" accept="video/*" required>
+                <div id="videoPreview"></div>
+            </div>
+            <button type="submit" class="btn">Inserir Filme</button>
+        </form>
+        <div id="responseMessage"></div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="./JS/script.js"></script>
+    <script src="./JS/preview.js"></script>
+</body>
+</html>
